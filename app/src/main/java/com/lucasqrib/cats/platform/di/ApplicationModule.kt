@@ -2,17 +2,7 @@ package com.lucasqrib.cats.platform.di
 
 import com.lucasqrib.cats.BuildConfig
 import com.lucasqrib.cats.data.datasource.CatDatasource
-import com.lucasqrib.cats.data.dto.CatImageNetworkDTO
-import com.lucasqrib.cats.data.dto.CatNetworkDTO
-import com.lucasqrib.cats.data.dto.WeightNetworkDTO
-import com.lucasqrib.cats.data.mapper.CatImageMapper
-import com.lucasqrib.cats.data.mapper.CatMapper
-import com.lucasqrib.cats.data.mapper.CatWeightMapper
-import com.lucasqrib.cats.data.mapper.Mapper
 import com.lucasqrib.cats.data.repository.CatsRepositoryImpl
-import com.lucasqrib.cats.domain.model.Cat
-import com.lucasqrib.cats.domain.model.CatImage
-import com.lucasqrib.cats.domain.model.CatWeight
 import com.lucasqrib.cats.domain.repository.CatsRepository
 import com.lucasqrib.cats.platform.network.CatApiDatasource
 import com.lucasqrib.cats.platform.network.CatsHttpClient
@@ -54,7 +44,6 @@ class ApplicationModule {
     @Provides
     @Singleton
     fun providesCoroutineContext(): CoroutineDispatcher = Dispatchers.IO
-
 
 
 }

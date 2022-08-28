@@ -5,6 +5,7 @@
     <string name="title_cat_detail">Detalhes do gato</string>
     <string name="loading_error">Houve uma falha ao carregar os dados</string>
     <string name="try_again">Tentar novamente</string>
+    <string name="go_back">Voltar</string>
     <string name="life_span">Expectativa de vida:</string>
     <string name="weight">Peso:</string>
     <string name="traits">Traços</string>

@@ -4,6 +4,7 @@
     <string name="title_cat_detail">Cat details</string>
     <string name="loading_error">Something went wrong</string>
     <string name="try_again">Try again</string>
+    <string name="go_back">Go back</string>
     <string name="life_span">Life span:</string>
     <string name="weight">Weight:</string>
     <string name="traits">Traits</string>

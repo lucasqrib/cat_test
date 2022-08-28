@@ -1,4 +1,4 @@
-package com.lucasqrib.cats.platform.presentation
+package com.lucasqrib.cats.platform.presentation.detail
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,12 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.google.android.material.snackbar.Snackbar
 import com.lucasqrib.cats.R
 import com.lucasqrib.cats.databinding.FragmentCatDetailBinding
 import com.lucasqrib.cats.domain.model.Cat
 import com.lucasqrib.cats.domain.model.CatWeight
 import com.lucasqrib.cats.platform.di.GlideApp
+import com.lucasqrib.cats.platform.presentation.CatSharedViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.*
 
@@ -35,14 +38,24 @@ class CatDetailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel.getCatById(argument.catId)?.let {
             initViews(it)
-        }
+        } ?: showError()
 
+    }
+
+    private fun showError(){
+        Snackbar.make(binding.root, getString(R.string.loading_error), 5000)
+            .setAction(R.string.go_back) {
+                findNavController().popBackStack()
+            }.show()
     }
 
 
     private fun initViews(cat: Cat) {
-        setCatImage(cat.image?.url)
+
         binding.apply {
+            clInfo.visibility = View.VISIBLE
+            hideLoading()
+            setCatImage(cat.image?.url)
             tvCatName.text = cat.name
             tvCatDescription.text = cat.description
             setLifeSpan(cat.lifeSpan)
@@ -51,6 +64,11 @@ class CatDetailFragment : Fragment() {
             setTraitLevels(cat)
         }
     }
+
+    private fun hideLoading() {
+        binding.clpCatDetail.visibility = View.GONE
+    }
+
 
     private fun setTraits(cat: Cat) {
         binding.chipGroupLayout.apply {
