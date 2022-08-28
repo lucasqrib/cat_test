@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gatos</string>
+    <string name="title_cat_list">Lista dos gatos</string>
+    <string name="title_cat_detail">Detalhes do gato</string>
+    <string name="loading_error">Houve uma falha ao carregar os dados</string>
+    <string name="try_again">Tentar novamente</string>
+    <string name="life_span">Expectativa de vida:</string>
+    <string name="weight">Peso:</string>
+    <string name="traits">Traços</string>
+    <string name="indoor">Caseiro</string>
+    <string name="lap">Colo</string>
+    <string name="experimental">Experimental</string>
+    <string name="hairless">Sem pelo</string>
+    <string name="natural">Natural</string>
+    <string name="rare">Raro</string>
+    <string name="rex">Rex</string>
+    <string name="suppressed_tail">Calda curta</string>
+    <string name="short_leg">Perna curta</string>
+    <string name="hypoallergenic">Hypoalergênico</string>
+    <string name="adaptability">Adaptação</string>
+    <string name="affection">Carinho</string>
+    <string name="child_friendly">Crianças</string>
+    <string name="dog_friendly">Cachorros</string>
+    <string name="cat_friendly">Outros gatos</string>
+    <string name="energy">Energia</string>
+    <string name="grooming">Pelagem</string>
+    <string name="health_issues">Problemas de saúde</string>
+    <string name="intelligence">Inteligência</string>
+    <string name="shedding">Tosa</string>
+    <string name="social_needs">Sociável</string>
+    <string name="stranger_friendly">Estranhos</string>
+    <string name="vocalisation">Braulho</string>
+    <string name="salable">Negociável</string>
+    <string name="life_span_text">%s anos</string>
+    <string name="weight_text_imperial">%s libras</string>
+    <string name="weight_text_metric">%s quilos</string>
+
+</resources>

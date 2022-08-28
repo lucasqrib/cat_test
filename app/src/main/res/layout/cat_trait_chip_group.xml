@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/md_traits">
+
+    <TextView
+        android:id="@+id/tv_cat_traits"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/traits"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cg_traits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+
+        app:layout_constraintTop_toBottomOf="@id/tv_cat_traits">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_indoor"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/indoor"
+            tools:checked="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_lap"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/lap" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_experimental"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/experimental" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_hairless"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/hairless" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_natural"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/natural" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_rare"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/rare" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_rex"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/rex" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_suppressed_tail"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/suppressed_tail" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_short_leg"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/short_leg" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_hypoallergenic"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/hypoallergenic" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

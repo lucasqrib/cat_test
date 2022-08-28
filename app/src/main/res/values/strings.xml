@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Cats</string>
+    <string name="title_cat_list">Cat list</string>
+    <string name="title_cat_detail">Cat details</string>
+    <string name="loading_error">Something went wrong</string>
+    <string name="try_again">Try again</string>
+    <string name="life_span">Life span:</string>
+    <string name="weight">Weight:</string>
+    <string name="traits">Traits</string>
+    <string name="indoor">Indoor</string>
+    <string name="lap">Lap</string>
+    <string name="experimental">Experimental</string>
+    <string name="hairless">Hairless</string>
+    <string name="natural">Natural</string>
+    <string name="rare">Rare</string>
+    <string name="rex">Rex</string>
+    <string name="suppressed_tail">Suppressed Tail</string>
+    <string name="short_leg">Short leg</string>
+    <string name="hypoallergenic">Hypoallergenic</string>
+    <string name="adaptability">Adaptability</string>
+    <string name="affection">Affection</string>
+    <string name="child_friendly">Child Friendly</string>
+    <string name="dog_friendly">Dog friendly</string>
+    <string name="cat_friendly">Cat friendly</string>
+    <string name="energy">Energy</string>
+    <string name="grooming">Grooming</string>
+    <string name="health_issues">Health issues</string>
+    <string name="intelligence">Intelligence</string>
+    <string name="shedding">Shedding</string>
+    <string name="social_needs">Social needs</string>
+    <string name="stranger_friendly">Stranger friendly</string>
+    <string name="vocalisation">Vocalisation</string>
+    <string name="salable">Salable</string>
+    <string name="life_span_text">%s years</string>
+    <string name="weight_text_imperial">%s pounds</string>
+    <string name="weight_text_metric">%s kilos</string>
+</resources>

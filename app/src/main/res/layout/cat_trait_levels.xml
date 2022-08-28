@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/chip_group_layout"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_adaptability_title"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/adaptability"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_traits"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pb_adaptability"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing"
+        app:layout_constraintBottom_toBottomOf="@id/tv_adaptability_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_adaptability_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_adaptability_title"
+        tools:progress="50" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_traits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <TextView
+        android:id="@+id/tv_affection"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/affection"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_traits"
+        app:layout_constraintTop_toBottomOf="@id/tv_adaptability_title" />
+
+    <ProgressBar
+        android:id="@+id/pb_affection"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing"
+        app:layout_constraintBottom_toBottomOf="@id/tv_affection"
+        app:layout_constraintLeft_toRightOf="@id/tv_affection"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_affection"
+        tools:progress="50" />
+
+
+    <TextView
+        android:id="@+id/tv_child_friendly_title"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/child_friendly"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_traits"
+        app:layout_constraintTop_toBottomOf="@id/tv_affection" />
+
+    <ProgressBar
+        android:id="@+id/pb_child_friendly"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing"
+        app:layout_constraintBottom_toBottomOf="@id/tv_child_friendly_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_child_friendly_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_child_friendly_title"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/tv_dog_friendly_title"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/dog_friendly"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_traits"
+        app:layout_constraintTop_toBottomOf="@id/tv_child_friendly_title" />
+
+    <ProgressBar
+        android:id="@+id/pb_dog_friendly"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing"
+        app:layout_constraintBottom_toBottomOf="@id/tv_dog_friendly_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_dog_friendly_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_dog_friendly_title"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/tv_cat_friendly_title"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/cat_friendly"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_traits"
+        app:layout_constraintTop_toBottomOf="@id/tv_dog_friendly_title" />
+
+    <ProgressBar
+        android:id="@+id/pb_cat_friendly"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing"
+        app:layout_constraintBottom_toBottomOf="@id/tv_cat_friendly_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_cat_friendly_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_cat_friendly_title"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/tv_energy_title"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/energy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_traits"
+        app:layout_constraintTop_toBottomOf="@id/tv_cat_friendly_title" />
+
+    <ProgressBar
+        android:id="@+id/pb_energy"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing"
+        app:layout_constraintBottom_toBottomOf="@id/tv_energy_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_energy_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_energy_title"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/tv_grooming_title"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/grooming"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_traits"
+        app:layout_constraintTop_toBottomOf="@id/tv_energy_title" />
+
+    <ProgressBar
+        android:id="@+id/pb_grooming"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing"
+        app:layout_constraintBottom_toBottomOf="@id/tv_grooming_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_grooming_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_grooming_title"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/tv_health_issues_title"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/health_issues"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_traits"
+        app:layout_constraintTop_toBottomOf="@id/tv_grooming_title" />
+
+    <ProgressBar
+        android:id="@+id/pb_health_issues"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing"
+        app:layout_constraintBottom_toBottomOf="@id/tv_health_issues_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_health_issues_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_health_issues_title"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/tv_intelligence_title"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/intelligence"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_traits"
+        app:layout_constraintTop_toBottomOf="@id/tv_health_issues_title" />
+
+    <ProgressBar
+        android:id="@+id/pb_intelligence"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing"
+        app:layout_constraintBottom_toBottomOf="@id/tv_intelligence_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_intelligence_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_intelligence_title"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/tv_shedding_title"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/shedding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_traits"
+        app:layout_constraintTop_toBottomOf="@id/tv_intelligence_title" />
+
+    <ProgressBar
+        android:id="@+id/pb_shedding"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing"
+        app:layout_constraintBottom_toBottomOf="@id/tv_shedding_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_shedding_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_shedding_title"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/tv_social_title"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/social_needs"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_traits"
+        app:layout_constraintTop_toBottomOf="@id/tv_shedding_title" />
+
+    <ProgressBar
+        android:id="@+id/pb_social_needs"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing"
+        app:layout_constraintBottom_toBottomOf="@id/tv_social_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_social_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_social_title"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/tv_stranger_friendly_title"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/stranger_friendly"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_traits"
+        app:layout_constraintTop_toBottomOf="@id/tv_social_title" />
+
+    <ProgressBar
+        android:id="@+id/pb_stranger_friendly"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing"
+        app:layout_constraintBottom_toBottomOf="@id/tv_stranger_friendly_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_stranger_friendly_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_stranger_friendly_title"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/tv_vocalisation_title"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/vocalisation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_traits"
+        app:layout_constraintTop_toBottomOf="@id/tv_stranger_friendly_title" />
+
+    <ProgressBar
+        android:id="@+id/pb_vocalisation"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing"
+        app:layout_constraintBottom_toBottomOf="@id/tv_vocalisation_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_vocalisation_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_vocalisation_title"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/tv_salable_title"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_spacing"
+        android:text="@string/salable"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_traits"
+        app:layout_constraintTop_toBottomOf="@id/tv_vocalisation_title" />
+
+    <ProgressBar
+        android:id="@+id/pb_salable"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_spacing"
+        app:layout_constraintBottom_toBottomOf="@id/tv_salable_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_salable_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_salable_title"
+        tools:progress="50" />
+</androidx.constraintlayout.widget.ConstraintLayout>

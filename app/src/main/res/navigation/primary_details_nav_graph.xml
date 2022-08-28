@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cat_list_fragment">
+
+    <fragment
+        android:id="@+id/cat_list_fragment"
+        android:name="com.lucasqrib.cats.platform.presentation.list.CatListFragment"
+        android:label="@string/title_cat_list">
+        <action
+            android:id="@+id/show_cat_detail"
+            app:destination="@id/cat_detail_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument
+                android:name="cat_id"
+                android:defaultValue=""
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/cat_detail_fragment"
+        android:name="com.lucasqrib.cats.platform.presentation.CatDetailFragment"
+        android:label="@string/title_cat_detail"
+        tools:layout="@layout/fragment_cat_detail">
+        <argument
+            android:name="cat_id"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+</navigation>
