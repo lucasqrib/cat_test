@@ -4,11 +4,11 @@
 
 The project is basically divided in 3 packages:
 
-- **data** package: Is responsible for all the data logic (repository, mappers, data transfer objects and datasources), there's none Android code in here
+- [data](https://github.com/lucasqrib/cat_test/blob/master/README.md#the-data-package) package: Is responsible for all the data logic (repository, mappers, data transfer objects and datasources), there's none Android code in here
 
-- **domain** package: Where all the businnes logic (despite in this app case, is almost none) and model objects are, there's none Android code in here too
+- [domain](https://github.com/lucasqrib/cat_test/blob/master/README.md#the-domain-package) package: Where all the businnes logic (despite in this app case, is almost none) and model objects are, there's none Android code in here too
 
-- **platform** package: Where all the platform (Android) specific code are, like network, presentation and dependency injection code.
+- [platform](https://github.com/lucasqrib/cat_test/blob/master/README.md#the-platform-package) package: Where all the platform (Android) specific code are, like network, presentation and dependency injection code.
 
 ---
 
